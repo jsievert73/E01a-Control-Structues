@@ -1,78 +1,77 @@
-Open main1.py. Before running it, what do you expect this program to do? 
+Open main1.py. Before running it, what do you expect this program to do? It will print "Greetings! What is your favorite color?"
 
 Now right click on the window and select “Run Python File in Terminal”. Click in the bottom panel, and answer the question. Describe what happened. 
 
-What do you think the program did with what you typed?
+What do you think the program did with what you typed? I don't think it did anything with it, as there was no variable to save it to.
+
+
+Open main2.py. Before running it, describe how this is different than main1.py.  We now have the given color saved to a variable, which is then printed out.
+
+What do you think the color = input() will do? It will print "Greetings! What is my favorite color? Then prints whatever you type into it.
+
+Run the program in the terminal and answer the question. Did the program do what you expected? yup
 
 
 
-Open main2.py. Before running it, describe how this is different than main1.py. 
+Open main3.py. Before running it, describe how this is different than main2.py. It now has an if/else statment. This will make it respond differently depending on what you entire as your input
 
-What do you think the color = input() will do? 
+What is happening on lines 11–14? It is checking if the user entered red as the favorite color and whether they were correct or not.
 
-Run the program in the terminal and answer the question. Did the program do what you expected?
+Why are lines 12 and 14 indented? I don't know if it matters in python, but it makes it easier to see what falls under each part of the if/else statement
 
+Run the program and answer the question. What happens if you don’t capitalize Red? Then it says that your answer was not correct.
 
-
-Open main3.py. Before running it, describe how this is different than main2.py. 
-
-What is happening on lines 11–14? 
-
-Why are lines 12 and 14 indented? 
-
-Run the program and answer the question. What happens if you don’t capitalize Red? 
-
-What does this tell you about "color"?
+What does this tell you about "color"? It's case-sensitive
 
 
 
-Open main4.py. Before running it, describe how this is different than main2.py. 
+Open main4.py. Before running it, describe how this is different than main2.py. Now it will recognize either "Red" or "red" as correct.
 
-What problem is this trying to solve? 
+What problem is this trying to solve? It's trying to solve the issue of users becoming frustrated over case-sensitivity issues.
 
-Run the program and answer the question. What happens if you use some other capitalization scheme (i.e., “RED” or “reD“)?
-
-
-
-Open main5.py. What do you expect line 11 to do? 
-
-What problem is it trying to solve? 
-
-Run the program and answer the question. What happens if you add spaces before or after the word (i.e., “  RED  “ or “ red”)?
+Run the program and answer the question. What happens if you use some other capitalization scheme (i.e., “RED” or “reD“)? RED continues to break the system, as we are only covering VERY specific circumstances.
 
 
 
-Open main6.py. How is line 11 different than main5.py? 
+Open main5.py. What do you expect line 11 to do? it will force the input to become all lowercase letters.
 
-What would you guess .strip() is doing? 
+What problem is it trying to solve? still continuing to deal with the issue of case sensitivity
 
-Run the program and answer the question. Is there another way of writing “red” that will break this logic?
+Run the program and answer the question. What happens if you add spaces before or after the word (i.e., “  RED  “ or “ red”)? It continues to assume that you have entered the wrong color.
 
 
 
-Open main7.py. Before running this program, how do you expect this to be different than main6.py? 
+Open main6.py. How is line 11 different than main5.py? we have now added .strip
 
-What is the purpose of line 11? 
+What would you guess .strip() is doing? It will remove the spaces from the input
+
+Run the program and answer the question. Is there another way of writing “red” that will break this logic? "r e d" will break the logic
+
+
+
+Open main7.py. Before running this program, how do you expect this to be different than main6.py? now if the given input is pink it will return "Close!"
+
+What is the purpose of line 11? It will strip spaces and downcase the input
 
 Run the program and answer the question.
 
 
 
-Open main8.py. What is the purpose of line 11? 
+Open main8.py. What is the purpose of line 11? It will let the program run until the user guesses the correct color
 
-Why are lines 12–19 indented? 
+Why are lines 12–19 indented? It identifies those lines as being part of the while loop.
 
-Run the program. What would happen if line 12 were moved before line 11 (and no longer indented)? 
+Run the program. What would happen if line 12 were moved before line 11 (and no longer indented)? It would run indefinitely if you entered the wrong color, and keep reprinting "Close!" or "Sorry try again!"
 
 Make that change and run the program again. To end any Python program, you can type ctrl-c.
 
 
 
-Open main9.py. What is happening on line 12? 
+Open main9.py. What is happening on line 12? we begin a while loop, as long as color isn't red.
 
-What is the purpose of “count”? 
+What is the purpose of “count”? to track how many guesses the user made before they were correct.
 
-What is happening on line 22? 
+What is happening on line 22? when the loop ends, because red was guessed, it prints out how many guesses you had to make, by replacing {0} with the variable stored in count.
 
 Run the program.
 
@@ -81,4 +80,4 @@ Run the program.
 
 Commit your changes and push them back to the repository. 
 
-Did you do the extra credit?
+Did you do the extra credit? Yes
